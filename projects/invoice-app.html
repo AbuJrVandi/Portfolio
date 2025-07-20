@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Invoice & Receipt Management App - A comprehensive mobile application built with React Native for managing invoices and receipts by Abu Jr Vandi.">
+    <meta name="keywords" content="Invoice App, React Native, Mobile Development, PDF Generation, Business Management, Abu Jr Vandi">
+    <title>Professional Invoice App | Abu Jr Vandi</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-10">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="../index.html" class="text-2xl font-bold text-blue-600">Abu Jr Vandi</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="../index.html#home" class="text-gray-800 hover:text-blue-600 transition duration-300">Home</a>
+                <a href="../index.html#about" class="text-gray-800 hover:text-blue-600 transition duration-300">About</a>
+                <a href="../index.html#skills" class="text-gray-800 hover:text-blue-600 transition duration-300">Skills</a>
+                <a href="../index.html#projects" class="text-gray-800 hover:text-blue-600 transition duration-300">Projects</a>
+                <a href="../index.html#contact" class="text-gray-800 hover:text-blue-600 transition duration-300">Contact</a>
+            </div>
+            <button id="menu-toggle" class="md:hidden focus:outline-none">
+                <i class="fas fa-bars text-gray-800 text-xl"></i>
+            </button>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white">
+            <div class="container mx-auto px-6 py-3 flex flex-col space-y-4">
+                <a href="../index.html#home" class="text-gray-800 hover:text-blue-600 transition duration-300">Home</a>
+                <a href="../index.html#about" class="text-gray-800 hover:text-blue-600 transition duration-300">About</a>
+                <a href="../index.html#skills" class="text-gray-800 hover:text-blue-600 transition duration-300">Skills</a>
+                <a href="../index.html#projects" class="text-gray-800 hover:text-blue-600 transition duration-300">Projects</a>
+                <a href="../index.html#contact" class="text-gray-800 hover:text-blue-600 transition duration-300">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Content -->
+    <main class="pt-24 bg-gray-50">
+        <div class="container mx-auto px-6 py-16">
+            <!-- Project Header -->
+            <header class="text-center mb-16">
+                <h1 class="text-5xl font-bold text-gray-800">📱 Professional Invoice App</h1>
+                <p class="text-xl text-gray-600 mt-4">A comprehensive mobile application for professional invoice & receipt management built with React Native.</p>
+            </header>
+
+            <!-- Project Image -->
+            <div class="text-center mb-16">
+                <img src="../images/LOG.png" alt="Invoice App Interface" class="mx-auto rounded-lg shadow-2xl max-w-4xl w-full">
+            </div>
+
+            <!-- Project Overview -->
+            <section class="bg-white p-8 rounded-lg shadow-lg mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">📝 Project Overview</h2>
+                <p class="text-gray-600 text-lg leading-relaxed mb-6">
+                    The Professional Invoice App is a comprehensive mobile application designed to help businesses and freelancers 
+                    manage their invoices and receipts efficiently. Built with React Native and a robust Node.js backend, 
+                    this app provides a seamless experience for creating, managing, and tracking invoices with features like 
+                    PDF generation, payment tracking, and detailed financial analytics.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">🎯 Key Objectives</h3>
+                        <ul class="text-gray-600 space-y-2">
+                            <li>• Streamline invoice creation and management</li>
+                            <li>• Provide professional PDF generation</li>
+                            <li>• Track payments and financial analytics</li>
+                            <li>• Ensure secure user authentication</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">💼 Target Users</h3>
+                        <ul class="text-gray-600 space-y-2">
+                            <li>• Small business owners</li>
+                            <li>• Freelancers and consultants</li>
+                            <li>• Service providers</li>
+                            <li>• Independent contractors</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tech Stack -->
+            <section class="bg-white p-8 rounded-lg shadow-lg mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">🚀 Technology Stack</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-semibold text-blue-600 mb-4">📱 Frontend</h3>
+                        <div class="space-y-3">
+                            <div class="flex items-center">
+                                <i class="fab fa-react text-blue-500 text-xl mr-3"></i>
+                                <span class="text-gray-700">React Native (Expo)</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fab fa-js-square text-yellow-500 text-xl mr-3"></i>
+                                <span class="text-gray-700">TypeScript</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-mobile-alt text-green-500 text-xl mr-3"></i>
+                                <span class="text-gray-700">React Navigation</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-palette text-purple-500 text-xl mr-3"></i>
+                                <span class="text-gray-700">React Native Paper</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-green-600 mb-4">⚙️ Backend</h3>
+                        <div class="space-y-3">
+                            <div class="flex items-center">
+                                <i class="fab fa-node-js text-green-500 text-xl mr-3"></i>
+                                <span class="text-gray-700">Node.js & Express.js</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-database text-blue-500 text-xl mr-3"></i>
+                                <span class="text-gray-700">SQLite Database</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-file-pdf text-red-500 text-xl mr-3"></i>
+                                <span class="text-gray-700">PDFKit for PDF Generation</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-shield-alt text-orange-500 text-xl mr-3"></i>
+                                <span class="text-gray-700">JWT Authentication & Bcrypt</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Key Features -->
+            <section class="bg-white p-8 rounded-lg shadow-lg mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">✨ Key Features</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="text-center p-6 border border-gray-200 rounded-lg">
+                        <i class="fas fa-user-shield text-blue-500 text-3xl mb-4"></i>
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2">👤 User Management</h3>
+                        <p class="text-gray-600 text-sm">Secure authentication, profile management, and password reset functionality</p>
+                    </div>
+                    <div class="text-center p-6 border border-gray-200 rounded-lg">
+                        <i class="fas fa-chart-line text-green-500 text-3xl mb-4"></i>
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2">📊 Dashboard</h3>
+                        <p class="text-gray-600 text-sm">Revenue tracking, invoice status overview, and payment statistics</p>
+                    </div>
+                    <div class="text-center p-6 border border-gray-200 rounded-lg">
+                        <i class="fas fa-file-invoice text-purple-500 text-3xl mb-4"></i>
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2">📄 Invoice Management</h3>
+                        <p class="text-gray-600 text-sm">Create professional invoices with customizable templates and PDF generation</p>
+                    </div>
+                    <div class="text-center p-6 border border-gray-200 rounded-lg">
+                        <i class="fas fa-receipt text-orange-500 text-3xl mb-4"></i>
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2">🧾 Receipt Management</h3>
+                        <p class="text-gray-600 text-sm">Generate receipts for payments with PDF export capabilities</p>
+                    </div>
+                    <div class="text-center p-6 border border-gray-200 rounded-lg">
+                        <i class="fas fa-calculator text-red-500 text-3xl mb-4"></i>
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2">💼 Business Features</h3>
+                        <p class="text-gray-600 text-sm">Client management, payment tracking, and tax calculations</p>
+                    </div>
+                    <div class="text-center p-6 border border-gray-200 rounded-lg">
+                        <i class="fas fa-mobile-alt text-indigo-500 text-3xl mb-4"></i>
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2">🎨 Modern UI/UX</h3>
+                        <p class="text-gray-600 text-sm">Clean interface with dark/light theme support and responsive design</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Implementation Details -->
+            <section class="bg-white p-8 rounded-lg shadow-lg mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">🔧 Implementation Highlights</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-semibold text-blue-600 mb-4">📱 Mobile Development</h3>
+                        <ul class="text-gray-600 space-y-2">
+                            <li>• Built with React Native and Expo for cross-platform compatibility</li>
+                            <li>• TypeScript implementation for type safety and better development experience</li>
+                            <li>• React Navigation for seamless screen transitions</li>
+                            <li>• React Native Paper for Material Design components</li>
+                            <li>• Async Storage for local data persistence</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-green-600 mb-4">⚙️ Backend Architecture</h3>
+                        <ul class="text-gray-600 space-y-2">
+                            <li>• RESTful API built with Node.js and Express.js</li>
+                            <li>• SQLite database for efficient data storage</li>
+                            <li>• JWT-based authentication system</li>
+                            <li>• Password encryption using Bcrypt</li>
+                            <li>• PDFKit integration for professional PDF generation</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Project Structure -->
+            <section class="bg-white p-8 rounded-lg shadow-lg mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">📁 Project Structure</h2>
+                <div class="bg-gray-100 p-6 rounded-lg overflow-x-auto">
+                    <pre class="text-sm text-gray-700">
+invoice-app/
+├── backend/
+│   ├── src/
+│   │   ├── config/          # Database and app configuration
+│   │   ├── controllers/     # API route handlers
+│   │   ├── middleware/      # Authentication and validation
+│   │   ├── models/          # Database models
+│   │   ├── routes/          # API routes definition
+│   │   └── server.js        # Main server file
+│   └── package.json
+├── frontend/
+│   ├── src/
+│   │   ├── components/      # Reusable UI components
+│   │   ├── screens/         # App screens/pages
+│   │   ├── navigation/      # Navigation configuration
+│   │   ├── services/        # API service calls
+│   │   └── utils/           # Helper functions
+│   ├── App.tsx              # Main app component
+│   └── package.json
+└── README.md
+                    </pre>
+                </div>
+            </section>
+
+            <!-- Getting Started -->
+            <section class="bg-white p-8 rounded-lg shadow-lg mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">🚦 Getting Started</h2>
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800 mb-3">Prerequisites</h3>
+                        <ul class="text-gray-600 space-y-1 ml-4">
+                            <li>• Node.js (v14 or later)</li>
+                            <li>• npm or yarn package manager</li>
+                            <li>• Expo CLI for React Native development</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800 mb-3">Installation Steps</h3>
+                        <div class="bg-gray-100 p-4 rounded-lg">
+                            <code class="text-sm text-gray-700">
+                                # Clone the repository<br>
+                                git clone https://github.com/yourusername/invoice-app.git<br><br>
+                                # Install backend dependencies<br>
+                                cd backend && npm install<br><br>
+                                # Install frontend dependencies<br>
+                                cd ../frontend && npm install<br><br>
+                                # Start the backend server<br>
+                                cd ../backend && npm start<br><br>
+                                # Start the Expo development server<br>
+                                cd ../frontend && expo start
+                            </code>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Results & Impact -->
+            <div class="mt-16 bg-white p-8 rounded-lg shadow-lg">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Results & Impact</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                    <div>
+                        <div class="text-blue-600 text-5xl font-bold mb-2">100%</div>
+                        <div class="text-gray-600">Cross-Platform Compatibility</div>
+                    </div>
+                    <div>
+                        <div class="text-green-600 text-5xl font-bold mb-2">50+</div>
+                        <div class="text-gray-600">Business Features Implemented</div>
+                    </div>
+                    <div>
+                        <div class="text-purple-600 text-5xl font-bold mb-2">PDF</div>
+                        <div class="text-gray-600">Professional Document Generation</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="text-center mt-12">
+                <a href="https://github.com/AbuJrVandi/Professional_Invoice_App" target="_blank" class="bg-gray-800 hover:bg-gray-900 text-white font-bold py-3 px-8 rounded-lg transition duration-300 mr-4">
+                    <i class="fab fa-github mr-2"></i> View on GitHub
+                </a>
+                <a href="../index.html#projects" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition duration-300">
+                    <i class="fas fa-arrow-left mr-2"></i> Back to Projects
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 Abu Jr Vandi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../js/script.js"></script>
+</body>
+</html>

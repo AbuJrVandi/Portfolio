@@ -1,0 +1,263 @@
+/* Professional Responsive Design for Cross-Platform Compatibility */
+
+/* Extra Small Mobile Devices */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 0.75rem;
+    }
+    
+    /* Hero Section */
+    .hero h1 {
+        font-size: 2rem !important;
+        line-height: 1.2;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+        padding: 0 0.5rem;
+    }
+    
+    /* Contact Section */
+    #contact h2 {
+        font-size: 2.5rem !important;
+    }
+    
+    .project-card-modern,
+    .contact-info-card,
+    .contact-form-card {
+        margin: 0 0.5rem;
+        padding: 1rem;
+    }
+    
+    /* Contact Methods - Stack Vertically */
+    .contact-method .flex {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+    
+    .contact-method .bg-gradient-to-r {
+        margin: 0 auto 1rem auto;
+    }
+    
+    /* Form Inputs */
+    input, textarea {
+        font-size: 16px; /* Prevent zoom on iOS */
+    }
+}
+
+/* Small Mobile Devices */
+@media (min-width: 481px) and (max-width: 768px) {
+    .navbar {
+        padding: 0.5rem 1rem;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem !important;
+        line-height: 1.2;
+    }
+    
+    .hero p {
+        font-size: 1.1rem;
+        padding: 0 1rem;
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1rem;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem;
+    }
+    
+    .project-card-modern {
+        margin: 0 1rem;
+    }
+    
+    #contact h2 {
+        font-size: 3rem !important;
+        text-align: center;
+    }
+    
+    .contact-info-card,
+    .contact-form-card {
+        margin: 0 1rem;
+        padding: 1.5rem;
+    }
+}
+
+/* Tablet Devices */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    
+    #contact h2 {
+        font-size: 4rem;
+    }
+    
+    .contact-info-card,
+    .contact-form-card {
+        padding: 2rem;
+    }
+}
+
+/* Large Tablets and Small Desktops */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 1200px;
+        margin: 0 auto;
+        gap: 2.5rem;
+    }
+    
+    .skills-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+    
+    #contact h2 {
+        font-size: 5rem;
+    }
+}
+
+/* Large Desktops */
+@media (min-width: 1441px) {
+    .container {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+    
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 1300px;
+        margin: 0 auto;
+        gap: 3rem;
+    }
+    
+    .skills-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2.5rem;
+    }
+    
+    #contact h2 {
+        font-size: 6rem;
+    }
+}
+
+/* Touch Device Optimizations */
+@media (hover: none) and (pointer: coarse) {
+    .project-card-modern:hover,
+    .contact-info-card:hover,
+    .contact-form-card:hover {
+        transform: none !important;
+    }
+    
+    /* Larger touch targets */
+    .contact-method {
+        min-height: 60px;
+    }
+    
+    button, .btn {
+        min-height: 44px;
+        min-width: 44px;
+    }
+}
+
+/* High DPI Displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .project-card-modern img {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+    }
+}
+
+/* Landscape Orientation on Mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+    .hero {
+        padding: 2rem 0;
+    }
+    
+    .hero h1 {
+        font-size: 2rem !important;
+    }
+    
+    #contact h2 {
+        font-size: 2.5rem !important;
+    }
+    
+    .contact-info-card,
+    .contact-form-card {
+        padding: 1rem;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .navbar,
+    #contact canvas,
+    .animate-bounce,
+    .floating-elements {
+        display: none !important;
+    }
+    
+    body {
+        background: white !important;
+        color: black !important;
+    }
+    
+    .project-card-modern,
+    .contact-info-card {
+        box-shadow: none !important;
+        border: 1px solid #ccc !important;
+    }
+}
+
+/* Accessibility Improvements */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    .animate-bounce,
+    .floating-elements {
+        animation: none !important;
+    }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text-primary: #ffffff;
+        --text-secondary: #e5e7eb;
+        --bg-primary: #1f2937;
+        --bg-secondary: #374151;
+    }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+    .project-card-modern,
+    .contact-info-card,
+    .contact-form-card {
+        border: 2px solid #000 !important;
+    }
+    
+    .text-gray-200,
+    .text-blue-200,
+    .text-blue-300 {
+        color: #ffffff !important;
+    }
+}

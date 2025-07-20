@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Machine Learning for Predictive Analytics - A project by Abu Jr Vandi">
+    <meta name="keywords" content="Machine Learning, Predictive Analytics, Python, Scikit-learn, Abu Jr Vandi">
+    <title>Machine Learning for Predictive Analytics | Abu Jr Vandi</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-10">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="../index.html" class="text-2xl font-bold text-blue-600">Abu Jr Vandi</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="../index.html#home" class="text-gray-800 hover:text-blue-600 transition duration-300">Home</a>
+                <a href="../index.html#about" class="text-gray-800 hover:text-blue-600 transition duration-300">About</a>
+                <a href="../index.html#skills" class="text-gray-800 hover:text-blue-600 transition duration-300">Skills</a>
+                <a href="../index.html#projects" class="text-gray-800 hover:text-blue-600 transition duration-300">Projects</a>
+                <a href="../index.html#contact" class="text-gray-800 hover:text-blue-600 transition duration-300">Contact</a>
+            </div>
+            <button id="menu-toggle" class="md:hidden focus:outline-none">
+                <i class="fas fa-bars text-gray-800 text-xl"></i>
+            </button>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white">
+            <div class="container mx-auto px-6 py-3 flex flex-col space-y-4">
+                <a href="../index.html#home" class="text-gray-800 hover:text-blue-600 transition duration-300">Home</a>
+                <a href="../index.html#about" class="text-gray-800 hover:text-blue-600 transition duration-300">About</a>
+                <a href="../index.html#skills" class="text-gray-800 hover:text-blue-600 transition duration-300">Skills</a>
+                <a href="../index.html#projects" class="text-gray-800 hover:text-blue-600 transition duration-300">Projects</a>
+                <a href="../index.html#contact" class="text-gray-800 hover:text-blue-600 transition duration-300">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Content -->
+    <main class="pt-24 bg-gray-50">
+        <div class="container mx-auto px-6 py-16">
+            <!-- Project Header -->
+            <header class="text-center mb-16">
+                <h1 class="text-5xl font-bold text-gray-800">Machine Learning for Predictive Analytics</h1>
+                <p class="text-xl text-gray-600 mt-4">Implementing and comparing classification models for data-driven insights.</p>
+            </header>
+
+            <!-- Project Image -->
+            <div class="mb-16">
+                <img src="../images/portfolio-website.jpg" alt="Machine Learning Project" class="w-full rounded-lg shadow-2xl mx-auto max-w-4xl">
+            </div>
+
+            <!-- Main Content Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <!-- Left Column -->
+                <div class="md:col-span-2">
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <h2 class="text-3xl font-bold text-gray-800 mb-6">Project Overview</h2>
+                        <p class="text-gray-700 leading-relaxed mb-4">This project demonstrates two end-to-end machine learning classification pipelines. The first implements a Logistic Regression model from scratch to solve a real-world classification problem. The second provides a comparative analysis between Random Forest and Decision Tree models using the classic Iris dataset.</p>
+                        <p class="text-gray-700 leading-relaxed">The primary goal is to showcase a systematic approach to model development, including data preprocessing, feature engineering, model training, and robust evaluation.</p>
+                        
+                        <h3 class="text-2xl font-bold text-gray-800 mt-10 mb-6">Key Pipeline Stages</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <i class="fas fa-database text-blue-600 mt-1 mr-3"></i>
+                                <span><strong>Data Preprocessing:</strong> Cleaning, handling missing values, and encoding categorical data to prepare it for modeling.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-cogs text-blue-600 mt-1 mr-3"></i>
+                                <span><strong>Model Training:</strong> Implementing Logistic Regression, Random Forest, and Decision Tree classifiers using Scikit-learn.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-chart-pie text-blue-600 mt-1 mr-3"></i>
+                                <span><strong>Model Evaluation:</strong> Assessing performance using metrics like accuracy, precision, recall, F1-score, and visualizing results with confusion matrices.</span>
+                            </li>
+                             <li class="flex items-start">
+                                <i class="fas fa-file-export text-blue-600 mt-1 mr-3"></i>
+                                <span><strong>Model Persistence:</strong> Saving trained models for future use and deployment.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Right Column (Sidebar) -->
+                <div class="md:col-span-1">
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6">Tech Stack</h3>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="bg-gray-200 text-gray-800 text-sm font-semibold px-3 py-1.5 rounded-full">Python</span>
+                            <span class="bg-gray-200 text-gray-800 text-sm font-semibold px-3 py-1.5 rounded-full">Scikit-learn</span>
+                            <span class="bg-gray-200 text-gray-800 text-sm font-semibold px-3 py-1.5 rounded-full">Pandas</span>
+                            <span class="bg-gray-200 text-gray-800 text-sm font-semibold px-3 py-1.5 rounded-full">NumPy</span>
+                            <span class="bg-gray-200 text-gray-800 text-sm font-semibold px-3 py-1.5 rounded-full">Matplotlib</span>
+                        </div>
+
+                        <div class="mt-10">
+                            <a href="https://github.com/AbuJrVandi/Machine-Learning-Algorithm" target="_blank" rel="noopener noreferrer" class="w-full text-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 inline-block mb-4">
+                                <i class="fab fa-github mr-2"></i> View on GitHub
+                            </a>
+                            <a href="../index.html" class="w-full text-center bg-gray-700 hover:bg-gray-800 text-white font-bold py-3 px-6 rounded-lg transition duration-300 inline-block">
+                                <i class="fas fa-home mr-2"></i> Back to Home
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Results and Future Work Section -->
+            <div class="mt-16 bg-white p-8 rounded-lg shadow-lg">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Results and Future Work</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Key Results</h3>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start"><i class="fas fa-check-circle text-blue-600 mt-1 mr-3"></i>The Logistic Regression model achieved a classification accuracy of 91%.</li>
+                            <li class="flex items-start"><i class="fas fa-check-circle text-blue-600 mt-1 mr-3"></i>Comparative analysis showed that the Random Forest model provided superior classification accuracy and generalization on the Iris dataset compared to a single Decision Tree.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Future Enhancements</h3>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start"><i class="fas fa-rocket text-blue-600 mt-1 mr-3"></i>Develop an interactive dashboard to visualize model performance and allow for real-time predictions.</li>
+                            <li class="flex items-start"><i class="fas fa-layer-group text-blue-600 mt-1 mr-3"></i>Explore more advanced ensemble methods like AdaBoost and Gradient Boosting to further improve model accuracy.</li>
+                            <li class="flex items-start"><i class="fas fa-sliders-h text-blue-600 mt-1 mr-3"></i>Implement hyperparameter tuning techniques to optimize model performance.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 Abu Jr Vandi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
